@@ -1,0 +1,17 @@
+{
+  "name": "realtime-comment-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "start": "node run server.js",
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
