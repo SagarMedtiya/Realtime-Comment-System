@@ -1,6 +1,6 @@
-[-] create a npm project and install depandancies, express, moment and nodemon
+[+] create a npm project and install depandancies, express, moment and nodemon
 
-[-] create folders and files all we need. public, js, css, index, img
+[+] create folders and files all we need. public, js, css, index, img
 
 [-] Setup express server server.js
 
