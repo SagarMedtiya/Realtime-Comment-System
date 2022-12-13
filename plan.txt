@@ -2,7 +2,7 @@
 
 [+] create folders and files all we need. public, js, css, index, img
 
-[-] Setup express server server.js
+[+] Setup express server server.js
 
 [-] do frontend part html and css
 
