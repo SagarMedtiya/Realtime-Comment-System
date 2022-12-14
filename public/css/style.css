@@ -4,3 +4,19 @@ body{
     -webkit-font-smoothing: antialiased ;
     font-family: 'Mulish', sans-serif;
 }
+.btn{
+    float:right;
+    margin: 10px;
+}
+
+.comment__box{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comment__box .comment h5{
+    font-weight: 800;
+}
+p{
+    font-size: 16px;
+}
