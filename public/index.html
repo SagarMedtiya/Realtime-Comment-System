@@ -6,6 +6,7 @@
     <title>Realtime Comment System</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -17,9 +18,46 @@
         </div> 
         <div class="row">
             <div class="col-md-12">
-                <h4 class="'border-bottom pb-2">
-                    
-                </h4>
+                <h4 class="'border-bottom pb-2">Comments</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a comment</label>
+                    <textarea  id="textarea"  rows="3" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-primary float">Post Comment</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="comment__box">
+                    <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h5>John Doe</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit sint vero dicta, impedit voluptate beatae illo enim dignissimos inventore sed?</p>
+                                <div>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <small>11:30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h5>John Doe</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit sint vero dicta, impedit voluptate beatae illo enim dignissimos inventore sed?</p>
+                                <div>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <small>11:30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
