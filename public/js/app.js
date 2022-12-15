@@ -67,3 +67,6 @@ function broadcastComment (data){
     //Socket
     socket.emit('comment', data)
 }
+socket.on('comment',(data)=>{
+    appendToDom(data)    
+})
