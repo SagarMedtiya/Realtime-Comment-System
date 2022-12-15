@@ -17,4 +17,8 @@ io.on('connection',(socket)=>{
         data.time = Date()
         socket.broadcast.emit('comment', data)
     })
+
+    socket.on('typing',(data)=>{
+        socket.broadcast.emit('typing', data)
+    })
 })
