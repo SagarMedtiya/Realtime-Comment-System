@@ -6,9 +6,9 @@
 
 [+] do frontend part html and css
 
-[-] Post comment logic, append to dom, install socket.io, emit event from client
+[+] Post comment logic, append to dom, install socket.io, emit event from client
 
-[-] Listen and broadcast event from server
+[+] Listen and broadcast event from server
 
 [-] Listen for incoming events on client
 
