@@ -30,6 +30,7 @@ function postComment(comment){
     //Broadcast
     broadcastComment(data)
     // Sync with MongoDB
+    syncWithDb(data);
 }
 
 function appendToDom(data){
@@ -82,3 +83,15 @@ socket.on('typing',(data)=>{
 textarea.addEventListener('keyup',()=>{
     socket.emit('typing',{username})
 })
+
+//API calls
+function syncWithDb(data){
+    const headers ={
+        'Content-Type': 'application/json'
+    }
+    fetch('/api/comments',{ method: 'POST', body: JSON.stringify(data), headers})
+        .then(response =>response.json())
+        .then(result=>{
+            console.log(result)   
+        })
+}
