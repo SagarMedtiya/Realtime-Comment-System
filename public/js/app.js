@@ -98,7 +98,11 @@ function fetchComments(){
     fetch('/api/comments')
         .then(res=> res.json())
         .then(result=>{
-            appendToDom(result)
+            result.forEach((comment)=>{
+                comment.time = comment.createdAt
+                appendToDom(comment)
+            })
+
             console.log(result)
         })
 }
