@@ -12,7 +12,6 @@ const commentBox = document.querySelector('.comment__box');
 submitBtn.addEventListener('click',(e)=>{
     e.preventDefault()
     let comment = textarea.value
-
     if(!comment){
         return
     }
@@ -89,9 +88,19 @@ function syncWithDb(data){
     const headers ={
         'Content-Type': 'application/json'
     }
-    fetch('/api/comments',{ method: 'POST', body: JSON.stringify(data), headers})
+    fetch('/api/comments',{ method: 'Post', body: JSON.stringify(data), headers})
         .then(response =>response.json())
         .then(result=>{
             console.log(result)   
         })
 }
+function fetchComments(){
+    fetch('/api/comments')
+        .then(res=> res.json())
+        .then(result=>{
+            appendToDom(result)
+            console.log(result)
+        })
+}
+
+window.onload = fetchComments
