@@ -12,6 +12,28 @@ mongoose.connect(url).then(()=>{
     console.log('Something went wrong', error)
 });
 
+
+
+const Comment=require('./models/comments')
+app.use(express.json())
+//routes
+app.post('/api/comments',(req,res)=>{
+    const comment = new Comment({
+        
+        username: req.body.username,
+        comment: req.body.comment
+    })
+    comment.save().then(response=>{
+        res.send(response)
+    })
+})
+
+app.get('/api/comments',(req,res)=>{
+    Comment.find().then(comments=>{
+        res.send(comments)
+    })
+})
+
 app.use(express.static('public'))
 const server = app.listen(PORT, console.log(`Listening to ${PORT}`));
 
@@ -29,3 +51,4 @@ io.on('connection',(socket)=>{
         socket.broadcast.emit('typing', data)
     })
 })
+
