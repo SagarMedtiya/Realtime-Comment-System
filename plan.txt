@@ -10,17 +10,16 @@
 
 [+] Listen and broadcast event from server
 
-[-] Listen for incoming events on client
+[+] Listen for incoming events on client
 
-[-] Append comments animation
+[+] Append comments animation
 
-[-] Typing.. animation
+[+] Typing.. animation
 
-[-] Sync with db: connect mongodb, install mongoose, create model
+[+] Sync with db: connect mongodb, install mongoose, create model
 
-[-] Create routes and db logic 
+[+] Create routes and db logic 
 
-[-] Save a comment to db on post comment
-
-[-] 
+[+] Save a comment to db on post comment
+ 
 
